@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
-using gameplay;
+using GamePlayProto;
 using System.IO;
 
 public class ProtoBufTest {
@@ -13,17 +13,15 @@ public class ProtoBufTest {
         // Use the Assert class to test conditions.
         //Arrange
         HeartBeat inbeat = new HeartBeat();
-        inbeat.TimeStamp = 1.989f;
+        inbeat.TimeStamp = 1;
 
         //Act
-        var ser = proto.ProtobufSerializer.Create();
         MemoryStream stream = new MemoryStream();
-        ser.Serialize(stream, inbeat);
+		ProtoBuf.Serializer.Serialize(stream, inbeat);
 
         stream.Seek(0, SeekOrigin.Begin);
 
-        HeartBeat outbeat = null;
-        outbeat = ser.Deserialize(stream, outbeat, typeof(HeartBeat)) as HeartBeat;
+        HeartBeat outbeat = ProtoBuf.Serializer.Deserialize<HeartBeat>(stream);
 
         //Assert
         Assert.AreEqual(inbeat.TimeStamp, outbeat.TimeStamp);

@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package GamePlayProto;
+
+message HeartBeat{
+    int32 TimeStamp = 1;
+}
