@@ -25,6 +25,11 @@ namespace Nexus.Logic.Network
 				StartClient();
 			}
 		}
+
+		private void Update()
+		{
+			_Proxy.Update();
+		}
 		#endregion
 
 		#region Client
@@ -44,6 +49,7 @@ namespace Nexus.Logic.Network
 		public override void OnClientConnect(NetworkConnection conn)
 		{
 			base.OnClientConnect(conn);
+			_Proxy.OnConnect(conn);
 			Debug.Log("OnClientConnect");
 		}
 
