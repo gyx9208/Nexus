@@ -14,6 +14,8 @@ namespace Nexus.Logic.Network
 
 		public string ServerIP = "127.0.0.1";
 		public int ServerPort = 1019;
+
+		public float PingGap = 1f;
 	}
 
 	public class GlobalConfig

@@ -4,39 +4,55 @@ using UnityEngine;
 
 namespace Nexus.Logic.Base
 {
-	public class NestedCommonPool<TKey, TValue> where TValue : new()
+	public class NestedCommonPool<TKey, TBase>
 	{
-		private Dictionary<TKey, CommonPool<TValue>> _Nested = new Dictionary<TKey, CommonPool<TValue>>();
+		private Dictionary<TKey, Stack<TBase>> _Nested = new Dictionary<TKey, Stack<TBase>>();
 
-		public TValue Get(TKey key)
+		public T Get<T>(TKey key) where T : TBase, new()
 		{
-			CommonPool<TValue> pool = null;
+			Stack<TBase> pool = null;
 			if (!_Nested.TryGetValue(key, out pool))
 			{
-				pool = new CommonPool<TValue>();
+				pool = new Stack<TBase>();
 				_Nested.Add(key, pool);
+
 			}
-			return pool.Get();
+
+			if (pool.Count == 0)
+			{
+				return new T();
+			}
+			else
+			{
+				return (T)pool.Pop();
+			}
 		}
 
-		public void Return(TKey key, TValue value)
+		public void Return(TKey key, TBase value)
 		{
 			if (value == null)
 				return;
-			CommonPool<TValue> pool = null;
+
+			Stack<TBase> pool = null;
 			if (!_Nested.TryGetValue(key, out pool))
 			{
-				pool = new CommonPool<TValue>();
+				pool = new Stack<TBase>();
 				_Nested.Add(key, pool);
 			}
-			pool.Return(value);
+
+			pool.Push(value);
+
+#if UNITY_EDITOR
+			if (pool.Count > 30)
+				Debug.Log(string.Format("{0} has {1} items", key, pool.Count));
+#endif
 		}
 
 		public void Destroy()
 		{
-			foreach(var pool in _Nested)
+			foreach (var pool in _Nested)
 			{
-				pool.Value.Destroy();
+				pool.Value.Clear();
 			}
 			_Nested.Clear();
 			_Nested = null;

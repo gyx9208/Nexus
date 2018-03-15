@@ -85,6 +85,7 @@ namespace Nexus.Logic.Network
 			_Proxy = new ServerProxy();
 			Debug.Log("OnStartServer");
 		}
+
 		public override void OnStopServer()
 		{
 			base.OnStopServer();

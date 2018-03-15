@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine.Networking;
+﻿using UnityEngine.Networking;
+using Nexus.Logic.Base;
 
 namespace Nexus.Logic.Network
 {

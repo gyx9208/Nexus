@@ -53,6 +53,14 @@ namespace Nexus.Logic.Base
 		#endregion
 
 		#region get
+		public float SendGap
+		{
+			get
+			{
+				return _SendGap;
+			}
+		}
+
 		public float Ping
 		{
 			get

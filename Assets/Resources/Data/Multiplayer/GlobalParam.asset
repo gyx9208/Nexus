@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsServer: 1
   ServerIP: 127.0.0.1
-  ServerPort: 1019
+  ServerPort: 11019
+  PingGap: 1
