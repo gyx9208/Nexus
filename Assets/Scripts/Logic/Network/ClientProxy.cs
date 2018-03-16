@@ -1,4 +1,6 @@
 ﻿using Nexus.Logic.Base;
+using Nexus.UI;
+using Nexus.UI.Network;
 using System;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -8,6 +10,8 @@ namespace Nexus.Logic.Network
 	public class ClientProxy : NetProxy
 	{
 		private NetworkConnection _Conn;
+
+		private MonoNetworkInfoUI _NetworkInfoUI;
 
 		public ClientProxy()
 		{
@@ -54,6 +58,7 @@ namespace Nexus.Logic.Network
 		private void HeartBeatStart()
 		{
 			_Ping = new CommonPing(GlobalConfig.GetGlobalParam().PingGap);
+			_NetworkInfoUI = UGUITools.AddUI<MonoNetworkInfoUI>(MonoNetworkInfoUI.Path);
 		}
 
 		private void HeartBeatUpdate()
@@ -69,6 +74,7 @@ namespace Nexus.Logic.Network
 					_Ping.RequestPing(hb.ClientTimeStamp);
 					NetMsgPool.ReturnBase(msg);
 				}
+			_NetworkInfoUI.UpdatePing(_Ping.Ping);
 		}
 
 		private void OnReceiveHeartBeat(NetworkMessage netMsg, MsgBase msgBase)

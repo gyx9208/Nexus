@@ -12,6 +12,8 @@ namespace Nexus.Logic.Network
 		private NetProxy _Proxy;
 		private void Start()
 		{
+			Application.targetFrameRate = 200;
+
 			var config = GlobalConfig.GetGlobalParam();
 			if (config.IsServer)
 			{

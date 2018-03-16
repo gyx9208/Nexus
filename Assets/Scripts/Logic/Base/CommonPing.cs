@@ -16,7 +16,8 @@ namespace Nexus.Logic.Base
 			public bool Droped;
 		}
 
-		public const int CAPBILITY = 20;
+		public const int LAG_CAPBILITY=5;
+		public const int DROP_CAPBILITY = 20;
 
 		private Queue<float> _RecentPings;
 		private DropInfo[] _DropInfo;
@@ -27,8 +28,8 @@ namespace Nexus.Logic.Base
 		#region common
 		public CommonPing(float sendGap)
 		{
-			_RecentPings = new Queue<float>(CAPBILITY);
-			_DropInfo = new DropInfo[CAPBILITY];
+			_RecentPings = new Queue<float>(LAG_CAPBILITY);
+			_DropInfo = new DropInfo[DROP_CAPBILITY];
 			_SendGap = sendGap;
 		}
 
@@ -45,7 +46,7 @@ namespace Nexus.Logic.Base
 			_Ping = 0;
 			_DropRate = 0;
 			_Variance = 0;
-			_DropInfo = new DropInfo[CAPBILITY];
+			_DropInfo = new DropInfo[DROP_CAPBILITY];
 			_DropInfoIndex = 0;
 			_LastReceivedTime = 0;
 			_LastSendTime = 0;
@@ -106,7 +107,7 @@ namespace Nexus.Logic.Base
 		{
 			_DropInfo[_DropInfoIndex].TimeStamp = timeStamp;
 			_DropInfo[_DropInfoIndex].Droped = true;
-			_DropInfoIndex = GetNextIndex(_DropInfoIndex, CAPBILITY);
+			_DropInfoIndex = GetNextIndex(_DropInfoIndex, DROP_CAPBILITY);
 
 			_LastSendTime = timeStamp;
 			if (timeStamp - _LastReceivedTime > _SendGap * 2)
@@ -142,7 +143,7 @@ namespace Nexus.Logic.Base
 					dropCount++;
 				}
 			}
-			_DropRate = (float)dropCount / CAPBILITY;
+			_DropRate = (float)dropCount / DROP_CAPBILITY;
 		}
 
 		private void EnPing(float ping)
@@ -150,7 +151,7 @@ namespace Nexus.Logic.Base
 			//Debug.Log("Enping: " + ping);
 			float pingSum = ping + _Ping * _RecentPings.Count;
 
-			if (_RecentPings.Count == CAPBILITY)
+			if (_RecentPings.Count == LAG_CAPBILITY)
 			{
 				pingSum -= _RecentPings.Dequeue();
 			}
