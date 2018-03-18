@@ -52,6 +52,15 @@ namespace Nexus.Logic.Network
 			NetMsgPool.ReturnBase(baseMsg);
 		}
 
+		protected void SendMessage(short msgID, MessageBase content) 
+		{
+			MsgBase msg = NetMsgPool.Get<MsgBase>(MsgID.MSG_BASE);
+			msg.ID = msgID;
+			msg.Message = content;
+			_Conn.Send(MsgID.MSG_BASE, msg);
+			NetMsgPool.ReturnBase(msg);
+		}
+
 		#region heartbeat
 		CommonPing _Ping;
 
@@ -66,13 +75,10 @@ namespace Nexus.Logic.Network
 			if (IsConnected())
 				if (Time.time - _Ping.LastSendTime > _Ping.SendGap)
 				{
-					MsgBase msg = NetMsgPool.GetBase<MsgHeartBeat>(MsgID.MSG_HEART_BEAT);
-					MsgHeartBeat hb = (MsgHeartBeat)msg.Message;
+					MsgHeartBeat hb = NetMsgPool.Get<MsgHeartBeat>(MsgID.MSG_HEART_BEAT);
 					hb.ClientTimeStamp = Time.time;
-					_Conn.Send(MsgID.MSG_BASE, msg);
-
 					_Ping.RequestPing(hb.ClientTimeStamp);
-					NetMsgPool.ReturnBase(msg);
+					SendMessage(MsgID.MSG_HEART_BEAT, hb);
 				}
 			_NetworkInfoUI.UpdatePing(_Ping.Ping);
 		}

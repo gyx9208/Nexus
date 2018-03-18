@@ -9,7 +9,7 @@ namespace Nexus.UI
 {
 	public class UGUITools
 	{
-		public static string CANVAS_PATH = "Canvas";
+		public static string CANVAS_PATH = "UGUICanvas";
 		public static T AddUI<T>(string Path) where T : MonoBehaviour
 		{
 			var go = GameObject.Instantiate(Resources.Load(Path)) as GameObject;
