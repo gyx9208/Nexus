@@ -1,0 +1,84 @@
+{"frames": {
+
+"Cloud1.png":
+{
+	"frame": {"x":2,"y":771,"w":1107,"h":245},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1107,"h":245},
+	"sourceSize": {"w":1107,"h":245}
+},
+"FarGround1.png":
+{
+	"frame": {"x":1689,"y":530,"w":191,"h":465},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":191,"h":465},
+	"sourceSize": {"w":191,"h":465}
+},
+"FarGround2.png":
+{
+	"frame": {"x":938,"y":433,"w":749,"h":285},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":749,"h":285},
+	"sourceSize": {"w":749,"h":285}
+},
+"FarGround3.png":
+{
+	"frame": {"x":2,"y":469,"w":934,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":934,"h":300},
+	"sourceSize": {"w":934,"h":300}
+},
+"FarGround4.png":
+{
+	"frame": {"x":805,"y":2,"w":856,"h":298},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":856,"h":298},
+	"sourceSize": {"w":856,"h":298}
+},
+"FarGround5.png":
+{
+	"frame": {"x":1689,"y":2,"w":281,"h":526},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":281,"h":526},
+	"sourceSize": {"w":281,"h":526}
+},
+"Fore1.png":
+{
+	"frame": {"x":805,"y":302,"w":812,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":812,"h":129},
+	"sourceSize": {"w":812,"h":129}
+},
+"NearGround1.png":
+{
+	"frame": {"x":1111,"y":720,"w":530,"h":252},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":530,"h":252},
+	"sourceSize": {"w":530,"h":252}
+},
+"Platform1.png":
+{
+	"frame": {"x":2,"y":2,"w":801,"h":465},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":801,"h":465},
+	"sourceSize": {"w":801,"h":465}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "Scene6Res.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a3c96d9e67fb1197e41db054951fdf3f$"
+}
+}

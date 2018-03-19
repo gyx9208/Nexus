@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: c7f70ffa82dbd72489c6b2ab32652290
+timeCreated: 1521430456
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bg01.png
+    21300002: bg02.png
+    21300004: BgDeco1.png
+    21300006: BgDeco2.png
+    21300008: EmptyStar.png
+    21300010: FullStar.png
+    21300012: HCMark.png
+    21300014: IconDeco0.png
+    21300016: IconDeco1.png
+    21300018: IconDeco2.png
+    21300020: MainDot0.png
+    21300022: MainDot1.png
+    21300024: MainOrSideMark.png
+    21300026: point_b1.png
+    21300028: point_b2.png
+    21300030: SideDot0.png
+    21300032: SideDot1.png
+    21300034: SpecialMark1.png
+    21300036: SpecialMark2.png
+    21300038: SpecialMark3.png
+    21300040: StageBg0.png
+    21300042: StageBg1.png
+    21300044: StageBg2.png
+    21300046: StageDeco0.png
+    21300048: StageDeco1.png
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bg01.png
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 483
+        width: 99
+        height: 28
+      alignment: 0
+      pivot: {x: 454.5, y: 15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bg02.png
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 453
+        width: 99
+        height: 28
+      alignment: 0
+      pivot: {x: 454.5, y: 45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgDeco1.png
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 409
+        width: 111
+        height: 42
+      alignment: 0
+      pivot: {x: 442.5, y: 82}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BgDeco2.png
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 417
+        width: 132
+        height: 56
+      alignment: 0
+      pivot: {x: 319, y: 67}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: EmptyStar.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 430
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 237.5, y: 69.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FullStar.png
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 403
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 237.5, y: 96.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HCMark.png
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 307
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 163, y: 173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconDeco0.png
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 429
+        width: 92
+        height: 26
+      alignment: 0
+      pivot: {x: 177, y: 70}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconDeco1.png
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 401
+        width: 92
+        height: 26
+      alignment: 0
+      pivot: {x: 177, y: 98}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IconDeco2.png
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 373
+        width: 92
+        height: 26
+      alignment: 0
+      pivot: {x: 177, y: 126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MainDot0.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 270
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 94.5, y: 214.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MainDot1.png
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 213
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 94.5, y: 271.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MainOrSideMark.png
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 348
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 217.5, y: 152.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: point_b1.png
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 327
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 216, y: 175.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: point_b2.png
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 306
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 216, y: 196.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SideDot0.png
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 249
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 217.5, y: 235.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SideDot1.png
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 230
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 274.5, y: 254.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpecialMark1.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 261
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 33, y: 219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpecialMark2.png
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 241
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 156, y: 239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpecialMark3.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 195
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 33, y: 285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StageBg0.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 65, y: 121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StageBg1.png
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 287
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 316, y: 161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StageBg2.png
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 446, y: 169}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StageDeco0.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 457
+        width: 250
+        height: 16
+      alignment: 0
+      pivot: {x: 126, y: 47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StageDeco1.png
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 475
+        width: 402
+        height: 36
+      alignment: 0
+      pivot: {x: 202, y: 19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

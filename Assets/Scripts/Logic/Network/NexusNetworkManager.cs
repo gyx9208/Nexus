@@ -13,6 +13,7 @@ namespace Nexus.Logic.Network
 		private void Start()
 		{
 			Application.targetFrameRate = 200;
+			UnityEngine.Network.sendRate = 100;
 
 			var config = GlobalConfig.GetGlobalParam();
 			if (config.IsServer)
