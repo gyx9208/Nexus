@@ -15,6 +15,8 @@ namespace Nexus.Logic.Network
 
 		public ClientProxy()
 		{
+			GamePlayContext context = new GamePlayContext(true);
+
 			HeartBeatStart();
 		}
 

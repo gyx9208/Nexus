@@ -8,6 +8,7 @@ namespace Nexus.UI.InGame
 {
 	public class MonoInGameUI : MonoBehaviour
 	{
+		internal const string PATH = "UI/InGame/InGameUI";
 
 		// Use this for initialization
 		void Start()
@@ -25,6 +26,7 @@ namespace Nexus.UI.InGame
 		#region Move Button
 		public RectTransform MoveButton;
 		private Vector3 _MoveButtonCenter;
+
 
 		public void OnMoveButtonBeginDrag(BaseEventData data)
 		{
