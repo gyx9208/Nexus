@@ -12,5 +12,11 @@ namespace Nexus.Logic.Controller
 		{
 
 		}
+		#region event
+		internal void Regist(GamePlayContext context)
+		{
+			
+		}
+		#endregion
 	}
 }

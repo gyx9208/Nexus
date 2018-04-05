@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Nexus.Logic.Controller;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 namespace Nexus.UI.InGame
@@ -51,6 +53,14 @@ namespace Nexus.UI.InGame
 			
 		}
 
+		#endregion
+
+		#region event
+		private UnityEvent<Vector2> TouchMove;
+		internal void Regist(PlayerGestureInput playerGestureInput)
+		{
+			this.TouchMove += playerGestureInput.ReceiveTouchMove;
+		}
 		#endregion
 	}
 }
